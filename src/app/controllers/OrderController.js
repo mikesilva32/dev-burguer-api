@@ -65,7 +65,7 @@ class OrderController {
 }
 
 async update(request , response){
-   const schema = Yup.object({
+   const schema = Yup.object({ 
        status:Yup.string().required()
        });
      try{ 
