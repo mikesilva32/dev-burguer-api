@@ -42,7 +42,7 @@ class SessionController {
         password ,
          exisyingUser.password_hash )
 
-       
+
           if(!isPasswordCorrect){
         return emailOrPasswordIncorrect();
      }
