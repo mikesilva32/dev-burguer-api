@@ -13,11 +13,11 @@ const routes = new Router();
 
 const upload = multer(multerConfig)
 
-routes.post('/users',UserController.store);
-routes.post('/sessions',SessionController.store);
+routes.post('/users',UserController.store);// Cadastro
+routes.post('/sessions',SessionController.store);// Login
 
 routes.use(
-    authMiddleware);
+    authMiddleware); //será chamado por todas as rotas abaixo
 routes.post(
     '/products',
     adminMiddleware,
