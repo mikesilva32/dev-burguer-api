@@ -14,8 +14,8 @@ class Database{
     }
 
     init(){
-      this.conection = new Sequelize(databaseConfig);
-      models.map((model)=> model.init(this.conection)).map(model => model.associate && model.associate(this.conection.models) );
+      this.connection = new Sequelize(databaseConfig);
+      models.map((model)=> model.init(this.connection)).map(model => model.associate && model.associate(this.connection.models) );
     }
   mongo(){
     this.mongooseConnection = mongoose.connect('mongodb://Localhost:27017/devburguer',
