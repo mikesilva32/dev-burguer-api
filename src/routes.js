@@ -5,7 +5,7 @@ import ProductController from './app/controllers/ProductContrller.js';
 import multer from 'multer';
 import multerConfig from'./config/multer.cjs';
 import authMiddleware from './app/middlewares/auth.js';
-import CategoryController from './app/controllers/CategoryContrller.js';
+import CategoryController from './app/controllers/CategoryController.js';
 import adminMiddleware from './app/middlewares/admin.js';
 import OrderController from './app/controllers/OrderController.js';
 import CreatePaymentIntentController from './app/controllers/stripe/CreatePaymentIntentControlle.js';
